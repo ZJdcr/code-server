@@ -20,7 +20,7 @@ describe("plugin", () => {
     await papi.loadPlugins()
 
     app = express.default()
-    papi.mount(app)     
+    papi.mount(app)
 
     app.use("/api/applications", apps.router(papi))
 
